@@ -1,0 +1,82 @@
+@import './foundation/_fonts.scss';
+@import './foundation/_variables.scss';
+@import './foundation/_mixin.scss';
+@import './foundation/_base.scss';
+
+
+.hero {
+        padding: 130px 0 250px;
+        position: relative;
+        overflow: hidden;
+
+        .shape1 {
+                position: absolute;
+                top: 130px;
+                left: -100px;
+        }
+        .shape2{
+                position: absolute;
+                bottom: -100px;
+                right: 165px;
+        }
+        .container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        }
+        &__left{
+                max-width: 635px;
+                h1{
+                        width: 90%;
+                        span{
+                             color: $Light-Coral;   
+                        }
+                }
+        }
+        &__right{
+                max-width: 445px;
+                .line{
+                        margin-bottom: 80px;
+                }
+        }
+}
+
+.features{
+        background: $Sacramento-State-Green;
+        padding: 140px 0;
+        position: relative;
+        overflow: hidden;
+        &__left{
+                width: 455px;
+        }
+        &__right{
+                margin-top: 54px;
+                width: 540px;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .col{
+                        display: flex;
+                        gap: 23px;
+                }
+                .image{
+                        width: 72px;
+                        height: 72px;
+                }
+                .info{
+                        h3{
+                                color:$Light-Coral;
+                                margin-bottom: 16px;
+                        }
+                }
+        }
+        .shape{
+                position: absolute;
+                bottom: 0;
+                right: -100px;
+        }
+        .container{
+                display: flex;
+                justify-content: space-between;
+        }
+}
