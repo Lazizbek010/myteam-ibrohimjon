@@ -1,0 +1,146 @@
+@import './foundation/_fonts.scss';
+@import './foundation/_variables.scss';
+@import './foundation/_mixin.scss';
+@import './foundation/_base.scss';
+
+body {
+        overflow-x: hidden;
+}
+
+#header {
+        padding-bottom: 120px;
+        position: relative;
+}
+
+.nav2 {
+        margin: 120px 0;
+
+        .shape1 {
+                position: absolute;
+                top: 0px;
+                left: -100px;
+        }
+
+        .shape2 {
+                position: absolute;
+                bottom: 0px;
+                right: -150px;
+        }
+
+        .container {
+                max-width: 1112px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        &__left {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .left-top {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 16px;
+
+                        h2 {
+                                color: $Light-Coral;
+                        }
+                }
+
+                .left-bottom {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .box11 {
+                                display: flex;
+                                align-items: center;
+                                gap: 23px;
+                        }
+                }
+        }
+
+        &__right {
+                width: 540px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+
+                input {
+                        padding-bottom: 16px;
+                        width: 100%;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        border-bottom: 2px solid #979797;
+                        color: $White;
+
+                        &::placeholder {
+                                background-color: transparent;
+                                color: $White;
+                        }
+                }
+
+                .submit {
+                        padding: 9px 32px 11px 32px;
+                        border: none;
+                        background-color: $White;
+                        color: $Deep-Jungle-Green;
+                        border-radius: $bor-rad;
+                }
+        }
+
+}
+
+#footer {
+        background-color: $Dark-Green;
+        padding: 48px 0;
+
+        .container {
+                max-width: 1110px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+        }
+
+        &__left {
+                display: flex;
+                justify-content: center;
+                gap: 120px;
+
+                &-list {
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                }
+
+                &-logo {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 25px;
+                }
+
+                .nav__link {
+                        text-decoration: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 40px;
+                }
+        }
+
+        &__right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 53.25px;
+
+                .icons {
+                        display: flex;
+                        gap: 16px;
+                }
+        }
+}
